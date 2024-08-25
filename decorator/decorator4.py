@@ -43,3 +43,12 @@ def myFunc(name):
 
 myFunc("arjun")
 print(myFunc.__doc__)
+
+
+@select_logging("xlx")
+class A:
+    def __init__(self, name):
+        print("__init__ has been called: ", name)
+
+
+a = A("test")
