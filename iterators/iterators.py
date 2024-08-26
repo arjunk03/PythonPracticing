@@ -5,9 +5,16 @@ def get_list_of_num(n):
 
 t = get_list_of_num(10)
 
-for val in t:
-    print(val)
+# for val in t:
+#     print(val)
 
+print(next(t))
+print(next(t))
+print(next(t))
+print(next(t))
+print(next(t))
+# for val in t:
+#     print(val)
 # print(t.__next__())
 # print(t.__next__())
 # print(t.__next__())
