@@ -1,6 +1,6 @@
 def method_friendly_decorator(method_to_decorate):
     def wrapper(self, lie):
-        lie = lie - 10  # very friendly, decrease age even more :-)
+        lie = lie - 11  # very friendly, decrease age even more :-)
         method_to_decorate(self, lie)
 
     return wrapper
