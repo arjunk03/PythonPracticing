@@ -1,0 +1,28 @@
+{% extends "base.html" %} {% block data%}
+
+<div class="main wrapper clearfix">
+  <form action="" method="POST">{{ form.hidden_tag()}}
+<table>
+  <tr>
+      <td>
+user name 
+
+        </td>
+
+        <td> {{ form.uesrname}}</td>
+
+  </tr>
+
+  <tr>
+<td>Email</td>
+<td> {{ form.email}}</td>
+
+  </tr>
+
+</table>
+
+
+
+  </form>
+</div>
+{% endblock%}
