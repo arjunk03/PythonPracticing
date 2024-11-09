@@ -23,4 +23,4 @@ if __name__ == "__main__":
         t.map(thread_function, range(3))
 
 
-if "test":
+# if "test":
