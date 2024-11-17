@@ -23,7 +23,7 @@ def func():
     # global foo is modified
     print(foo)  # 7
     print(globals()["foo"])
-    # global foo
+    global foo
     print(foo)
 
 
