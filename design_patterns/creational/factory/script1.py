@@ -27,6 +27,19 @@ class AppleWatch(Product):
         Product.__init__(self, "AppleWatch", 400)
 
 
+class iPhone(Product):
+    def __init__(self, model, storage):
+        Product.__init__(self, "iPhone", 999)
+        self.__model = model
+        self.__storage = storage
+
+
+class AirPods(Product):
+    def __init__(self, version):
+        Product.__init__(self, "AirPods", 249)
+        self.__version = version
+
+
 class ProductFactory:
     @staticmethod
     def create(item_name, *args):
@@ -36,7 +49,17 @@ class ProductFactory:
             return ApplePad(*args)
         elif item_name == "AppleWatch":
             return AppleWatch(*args)
+        elif item_name == "iPhone":
+            return iPhone(*args)
+        elif item_name == "AirPods":
+            return AirPods(*args)
 
 
 air = ProductFactory.create("MacBookAir", "16GB", "Sierra")
 print(air.__dict__)
+
+# Test new products
+iphone = ProductFactory.create("iPhone", "14 Pro", "256GB")
+airpods = ProductFactory.create("AirPods", "Pro")
+print(iphone.__dict__)
+print(airpods.__dict__)
